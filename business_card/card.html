@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card - Malati's Beauty Bar</title>
+    <link rel="stylesheet" href="card.css">
+    <!-- Preload Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <h1 class="page-title">Business Card Design</h1>
+    <p class="instructions">Design Preview (Scaled 1.5x for screen). Print using browser "Print" function (Ctrl/Cmd +
+        P).</p>
+
+    <div class="card-wrapper">
+
+        <!-- CARD FRONT -->
+        <div class="card-container">
+            <div class="card-label">Front Side</div>
+            <div class="card card-front">
+                <div class="logo-container">
+                    <img src="../assets/logo.png" alt="Logo" class="logo-img">
+                    <h2>Malati's Beauty Bar</h2>
+                    <div class="tagline">Organic Beauty Salon</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD BACK -->
+        <div class="card-container">
+            <div class="card-label">Back Side</div>
+            <div class="card card-back">
+                <div class="info-section">
+                    <div class="name-block">
+                        <h3>Malati</h3>
+                        <div class="title">Esthetician</div>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i> 06 30372817
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i> malatibeautybar@gmail.com
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i> Paramaribostraat
+                            41<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2315 VE Leiden
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i> @malati_beauty_bar
+                        </div>
+                    </div>
+                </div>
+
+                <div class="qr-section">
+                    <!-- Generates a QR code for the website/services page -->
+                    <!-- Note: Replace 'https://malatisbeautybar.com' with the actual deployed URL -->
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://malatisbeautybar.com/%23services&color=121212&bgcolor=f8f8f8"
+                        alt="QR Code" class="qr-code-img">
+                    <div class="qr-label">
+                        Scan for<br><strong>Price Menu</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

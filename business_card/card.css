@@ -1,0 +1,283 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+:root {
+    --primary-color: #d4af37;
+    /* Metallic Gold */
+    --secondary-color: #f8f8f8;
+    /* Off-White */
+    --dark-bg: #121212;
+    /* Rich Black */
+    --text-color: #333333;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Lato', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+body {
+    background-color: #e0e0e0;
+    font-family: var(--font-body);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+    min-height: 100vh;
+}
+
+h1.page-title {
+    font-family: var(--font-heading);
+    color: var(--dark-bg);
+    margin-bottom: 10px;
+}
+
+p.instructions {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+/* Card Container */
+.card-wrapper {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.card-label {
+    font-size: 0.9rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+/* Base Card Dimensions & Style */
+.card {
+    width: 3.5in;
+    height: 2in;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    /* Scale up for screen viewing to look crisp/larger */
+    transform: scale(1.5);
+    transform-origin: top center;
+    margin-bottom: 120px;
+    /* Compensate for scale */
+}
+
+/* Common Elements */
+.logo-img {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+/* FRONT DESIGN */
+.card-front {
+    background-color: var(--dark-bg);
+    color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+/* Decorative Border */
+.card-front::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.card-front .logo-container {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-front .logo-img {
+    height: 50px;
+    filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.3));
+}
+
+.card-front h2 {
+    font-family: var(--font-heading);
+    font-size: 18pt;
+    letter-spacing: 1px;
+    margin: 5px 0;
+    font-weight: 700;
+}
+
+.card-front .tagline {
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+/* BACK DESIGN */
+.card-back {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 20px 25px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+/* Left Side: Contact Info */
+.info-section {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name-block {
+    margin-bottom: 12px;
+}
+
+.name-block h3 {
+    font-family: var(--font-heading);
+    font-size: 14pt;
+    color: var(--dark-bg);
+    margin: 0;
+    font-weight: 700;
+}
+
+.name-block .title {
+    font-size: 7.5pt;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 2px;
+    font-weight: bold;
+}
+
+/* Line separator */
+.separator {
+    width: 30px;
+    height: 1px;
+    background-color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contact-item {
+    font-size: 7pt;
+    display: flex;
+    align-items: center;
+    color: #444;
+}
+
+.contact-item i {
+    width: 12px;
+    color: var(--primary-color);
+    font-size: 8pt;
+    margin-right: 5px;
+    text-align: center;
+}
+
+/* Right Side: QR Code */
+.qr-section {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
+    padding-left: 15px;
+    height: 80%;
+}
+
+.qr-code-img {
+    width: 55px;
+    /* Adjust based on printing needs */
+    height: 55px;
+    margin-bottom: 5px;
+}
+
+.qr-label {
+    font-size: 6pt;
+    text-align: center;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+
+.qr-label strong {
+    color: var(--primary-color);
+    display: block;
+    font-weight: 700;
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+
+    .page-title,
+    .instructions,
+    .card-label {
+        display: none;
+    }
+
+    .card-wrapper {
+        display: block;
+    }
+
+    .card-container {
+        display: block;
+        /* Remove flex gap from container */
+        margin: 0;
+    }
+
+    .card {
+        box-shadow: none;
+        transform: none;
+        /* No scaling for print */
+        margin: 0;
+        margin-bottom: 0;
+        /* Cards might be imposed by printer software, but for this page we'll just stack them or let the user handle imposition */
+        page-break-inside: avoid;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border: 1px dotted #ccc;
+        /* Cut guide */
+    }
+}

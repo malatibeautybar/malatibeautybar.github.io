@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malati's Beauty Bar - Poster</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #8D6E63;
+            /* Earthy Brown/Terra Cotta */
+            --secondary-color: #D7CCC8;
+            /* Soft Beige */
+            --text-dark: #3E2723;
+            /* Dark Brown */
+            --text-light: #5D4037;
+            --white: #ffffff;
+            --poster-width: 210mm;
+            --poster-height: 297mm;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .poster-container {
+            width: var(--poster-width);
+            height: var(--poster-height);
+            background: var(--white);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            /* For screen viewing */
+        }
+
+        /* Background Graphics */
+        .bg-shape {
+            position: absolute;
+            background: var(--secondary-color);
+            opacity: 0.2;
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .shape-1 {
+            width: 400px;
+            height: 400px;
+            top: -100px;
+            left: -100px;
+        }
+
+        .shape-2 {
+            width: 300px;
+            height: 300px;
+            bottom: -50px;
+            right: -50px;
+        }
+
+        /* Content Layer */
+        .content-layer {
+            z-index: 10;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo-img {
+            height: 100px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-dark);
+            font-size: 3rem;
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+
+        .tagline {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Hero Image Area */
+        .hero-area {
+            width: 100%;
+            height: 250px;
+            margin: 30px 0;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .hero-area img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Services List */
+        .services-area {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px 40px;
+            width: 100%;
+        }
+
+        .service-item {
+            display: flex;
+            align-items: center;
+            font-size: 1.4rem;
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        .service-item i {
+            color: var(--primary-color);
+            margin-right: 15px;
+            font-size: 1.2rem;
+            width: 30px;
+            text-align: center;
+        }
+
+        /* Contact & CTA Section */
+        .bottom-section {
+            background: var(--secondary-color);
+            margin: 0 -40px -40px -40px;
+            /* Bleed to edges */
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .contact-details {
+            flex: 1;
+        }
+
+        .contact-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+            font-size: 1.2rem;
+        }
+
+        .contact-row i {
+            color: var(--primary-color);
+            width: 30px;
+            font-size: 1.4rem;
+            margin-right: 15px;
+        }
+
+        .contact-row strong {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .qr-section {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .qr-code {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        .scan-me {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        /* Print Controls */
+        .controls {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            width: 300px;
+        }
+
+        .btn-print {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .url-input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .btn-print:hover {
+            background: #6D4C41;
+        }
+
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+
+            .controls {
+                display: none;
+            }
+
+            .poster-container {
+                box-shadow: none;
+                width: 100%;
+                height: 100%;
+            }
+
+            @page {
+                size: A4;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="controls">
+        <h3>Poster Settings</h3>
+        <p style="margin-bottom: 10px; font-size: 0.9rem; color: #666;">Enter your website URL below to update the QR
+            code.</p>
+        <input type="text" id="websiteUrl" class="url-input" value="https://malatisbeautybar.com"
+            placeholder="https://your-website.com">
+        <button class="btn-print" onclick="window.print()">Save as PDF / Print</button>
+    </div>
+
+    <div class="poster-container">
+        <!-- Decoration -->
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+
+        <div class="content-layer">
+            <header>
+                <img src="assets/logo.png" alt="Logo" class="logo-img">
+                <h1>Malati's Beauty Bar</h1>
+                <p class="tagline">Organic Beauty & Wellness</p>
+            </header>
+
+            <div class="hero-area">
+                <img src="assets/hero_general_wide.png" alt="Beauty Treatments">
+            </div>
+
+            <div class="services-area">
+                <div class="services-grid">
+                    <div class="service-item">
+                        <i class="fas fa-eye"></i> Brow Threading
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-leaf"></i> Organic Facials
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-spa"></i> Body Waxing
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-cut"></i> Hair Styling
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-paint-brush"></i> Henna Brows
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-heart"></i> Hair Spa
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-section">
+                <div class="contact-details">
+                    <div class="contact-row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Location</strong>
+                            Paramaribostraat 41, 2315 VE Leiden
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <strong>Book Appointment</strong>
+                            06 30372817
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <strong>WhatsApp</strong>
+                            Available for easy booking
+                        </div>
+                    </div>
+                </div>
+
+                <div class="qr-section">
+                    <img id="qrImage" src="" alt="QR Code" class="qr-code">
+                    <div class="scan-me">Scan for Menu</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const urlInput = document.getElementById('websiteUrl');
+        const qrImage = document.getElementById('qrImage');
+
+        function updateQR() {
+            const url = urlInput.value;
+            // Using goqr.me API for reliable QR generation
+            qrImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(url)}`;
+        }
+
+        // Initial load
+        updateQR();
+
+        // Update on change
+        urlInput.addEventListener('input', updateQR);
+    </script>
+</body>
+
+</html>

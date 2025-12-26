@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Malati's Beauty Bar - Professional organic beauty treatments in Leiden. Brow threading, facials, waxing, and hair care. Book your appointment today!">
+    <meta name="keywords"
+        content="Beauty Salon Leiden, Eyebrow Threading, Organic Facials, Hair Spa, Waxing, Malati Beauty Bar">
+    <title>Malati's Beauty Bar | Organic Beauty Salon in Leiden</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Placeholder for FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="Malati's Beauty Bar Logo">
+                <span>Malati's Beauty Bar</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                <li><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+                <li><a href="#reviews" data-i18n="nav_reviews">Reviews</a></li>
+                <li><a href="#contact" class="btn-book" data-i18n="nav_book">Book Now</a></li>
+            </ul>
+            <div class="language-toggle">
+                <span id="lang-en" class="active" onclick="setLanguage('en')">🇬🇧 EN</span> |
+                <span id="lang-nl" onclick="setLanguage('nl')">🇳🇱 NL</span>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-slider">
+        <!-- Slide 1: General -->
+        <div class="slide active" style="background-image: url('assets/hero_general_wide.png')">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 data-i18n="hero_title_1">Organic Elegance & Beauty</h1>
+                <p data-i18n="hero_desc_1">Experience the art of herbal treatments in a cozy, professional setting.</p>
+                <a href="#contact" class="btn-hero" data-i18n="btn_appointment">Book Appointment</a>
+            </div>
+        </div>
+
+        <!-- Slide 2: Brows -->
+        <div class="slide" style="background-image: url('assets/hero_brows_wide.png')">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 data-i18n="hero_title_2">Precision Brow Artistry</h1>
+                <p data-i18n="hero_desc_2">Perfectly shaped brows using organic threading techniques.</p>
+                <a href="#services" class="btn-hero" data-i18n="btn_services">View Services</a>
+            </div>
+        </div>
+
+        <!-- Slide 3: Spa -->
+        <div class="slide" style="background-image: url('assets/hero_spa_wide.png')">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 data-i18n="hero_title_3">Rejuvenating Facials</h1>
+                <p data-i18n="hero_desc_3">Restore your glow with our signature herbal spa treatments.</p>
+                <a href="#contact" class="btn-hero" data-i18n="btn_appointment">Book Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about_title">Welcome to Malati's Beauty Bar</h2>
+
+            <!-- About Introduction -->
+            <div class="about-intro">
+                <p><strong data-i18n="about_intro_strong">A Cozy Home-Based Salon</strong><span
+                        data-i18n="about_intro_1">, Where Comfort Meets Elegance, Located in the Heart
+                        of
+                        Leiden.</span></p>
+                <p data-i18n="about_intro_2">Relax and experience professional, salon-quality beauty care in a warm and
+                    welcoming home
+                    environment. We offer expert threading, waxing, facials, hair care, and relaxing massages,
+                    all performed with great care and attention to detail. Our treatments use herbal and organic
+                    products to help you achieve naturally radiant skin and healthy, beautiful hair.</p>
+                <p data-i18n="about_intro_3">Open for off-hours and weekends, Malati’s Beauty Bar is designed to give
+                    you a
+                    comfortable, personal, and relaxing salon experience.</p>
+                <p><strong data-i18n="about_intro_4_strong">Indulge in beauty care that feels relaxing, refined, and
+                        just for you.</strong><br>
+                    <span data-i18n="about_intro_contact">Contact us via call or WhatsApp to book an appointment.
+                        ✨</span>
+                </p>
+            </div>
+
+            <!-- Meet Malati Split Section -->
+            <div class="meet-malati-grid">
+                <div class="malati-image">
+                    <img src="assets/malati_profile.png" alt="Malati - Esthetician">
+                </div>
+                <div class="malati-bio">
+                    <h3 data-i18n="malati_name">Meet Malati</h3>
+                    <p class="bio-subtitle" data-i18n="malati_role">Esthetician & Beauty Expert</p>
+                    <p data-i18n="malati_bio_1">With years of experience in the beauty industry, Malati brings a gentle
+                        touch and expert
+                        precision to every treatment.</p>
+                    <p data-i18n="malati_bio_2">Her philosophy is simple: beauty should be organic, relaxing, and
+                        tailored to you. Whether it's
+                        the art of brow threading or the science of herbal facials, Malati ensures you leave feeling
+                        refreshed and radiant.</p>
+                    <div class="signature">Malati</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title" data-i18n="services_title">Our Services</h2>
+            <div class="accordion">
+                <!-- Brow & Face Artistry -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span><i class="fas fa-eye"></i> <span data-i18n="service_cat_brows">Brow & Face
+                                Artistry</span></span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <ul class="price-list">
+                            <li><span>Brow Threading</span> <span class="price">€10</span></li>
+                            <li><span>Brow Tinting</span> <span class="price">€12</span></li>
+                            <li><span>Brow Henna Color</span> <span class="price">€15</span></li>
+                            <li><span>Brow Threading + Tinting Combo</span> <span class="price">€20</span></li>
+                            <li><span>Brow Threading + Henna Combo</span> <span class="price">€23</span></li>
+                            <li><span>Brow Waxing (In Shape)</span> <span class="price">€15</span></li>
+                            <li><span>Brow Waxing + Tinting Combo</span> <span class="price">€22</span></li>
+                            <li><span>Brow Waxing + Henna Combo</span> <span class="price">€25</span></li>
+                            <li><span>Full Face Threading (Incl. Brows)</span> <span class="price">€35</span></li>
+                            <li><span>Full Face Waxing (Incl. Brows)</span> <span class="price">€40</span></li>
+                            <li><span>Small Face Area Waxing (Lip/Chin/Sideburns)</span> <span class="price">€8</span>
+                            </li>
+                            <li><span>Nose / Ear Waxing</span> <span class="price">€10</span></li>
+                        </ul>
+                        <p style="padding: 10px 20px; font-style: italic; font-size: 0.9em; opacity: 0.8;">
+                            *Precision Threading (Forehead, Lip, Chin, etc.): €5 per area.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Hair Styling & Color -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span><i class="fas fa-cut"></i> <span data-i18n="service_cat_hair">Hair Styling &
+                                Color</span></span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <h4 class="accordion-category" data-i18n="service_sub_styling">Styling & Cut</h4>
+                        <ul class="price-list">
+                            <li><span>Wash + Quick Blowdry</span> <span class="price">€25</span></li>
+                            <li><span>Wash + Full Blowdry</span> <span class="price">€35</span></li>
+                            <li><span>Cut + Wash + Quick Blowdry</span> <span class="price">€35</span></li>
+                            <li><span>Signature Cut + Blowdry</span> <span class="price">€50</span></li>
+                        </ul>
+
+                        <h4 class="accordion-category" data-i18n="service_sub_color">Color & Treatment</h4>
+                        <ul class="price-list">
+                            <li><span>Single Process Color</span> <span class="price">From €40</span></li>
+                            <li><span>Color Touch-Up</span> <span class="price">€20</span></li>
+                            <li><span>Full Color + Wash + Blowdry</span> <span class="price">€60</span></li>
+                            <li><span>Highlights</span> <span class="price">€110</span></li>
+                            <li><span>L'Oreal Hair Spa Treatment</span> <span class="price">€35</span></li>
+                            <li><span>Permanent Straightening / Botox</span> <span class="price">€110</span></li>
+                            <li><span>Henna Hair Color</span> <span class="price">From €35</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Smooth & Silky Waxing -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span><i class="fas fa-leaf"></i> <span data-i18n="service_cat_waxing">Smooth & Silky
+                                Waxing</span></span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <h4 class="accordion-category" data-i18n="service_sub_body_wax">Body Waxing</h4>
+                        <ul class="price-list">
+                            <li><span>Full Legs</span> <span class="price">€35</span></li>
+                            <li><span>Half Legs / Half Arms</span> <span class="price">€20</span></li>
+                            <li><span>Full Arms</span> <span class="price">€30</span></li>
+                            <li><span>Underarms</span> <span class="price">€17</span></li>
+                        </ul>
+
+                        <h4 class="accordion-category" data-i18n="service_sub_intimate_wax">Intimate Waxing</h4>
+                        <ul class="price-list">
+                            <li><span>Hollywood / Full Brazilian</span> <span class="price">€35</span></li>
+                            <li><span>Bikini Line</span> <span class="price">€16</span></li>
+                            <li><span>Buttocks Only</span> <span class="price">€20</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Facials & Spa Treatments -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span><i class="fas fa-spa"></i> <span data-i18n="service_cat_facials">Facials & Spa
+                                Treatments</span></span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <h4 class="accordion-category" data-i18n="service_sub_signature_facial">Signature Facials (45-50
+                            min)</h4>
+                        <ul class="price-list">
+                            <li><span>O3+ Standard Facial</span> <span class="price">€50</span></li>
+                            <li><span>O3+ Anti-Aging Facial</span> <span class="price">€65</span></li>
+                            <li><span>Ayurvedic Lotus Facial</span> <span class="price">€40</span></li>
+                            <li><span>Fruit Facial</span> <span class="price">€40</span></li>
+                        </ul>
+
+                        <h4 class="accordion-category" data-i18n="service_sub_mani_pedi">Manicure, Pedicure & Massage
+                        </h4>
+                        <ul class="price-list">
+                            <li><span>Full Body Massage (60 min)</span> <span class="price">€60</span></li>
+                            <li><span>Pedicure</span> <span class="price">€40</span></li>
+                            <li><span>Manicure (Gel Finish)</span> <span class="price">€40</span></li>
+                            <li><span>Head Hair Oil Massage (30 min)</span> <span class="price">€25</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="price-note" data-i18n="price_note">* Prices are subject to change. Please confirm when booking.
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="gallery_title">Portfolio</h2>
+            <div class="gallery-grid">
+                <!-- Placeholders for now, replace with real images later -->
+                <!-- Item 1: Video/Story Example -->
+                <!-- Item 1: Link/Video Placeholder (Replaced Highlight Link) -->
+                <!-- Item 1: Highlight Video (Styled as View Highlights Box) -->
+                <!-- Item 1: Highlight Video 1 (Direct Play) -->
+                <div class="gallery-item video-container">
+                    <video class="gallery-video" autoplay muted loop playsinline onclick="openFullscreen(this)">
+                        <source src="assets/story_video_1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- Item 2: Highlight Video 2 (Direct Play) -->
+                <div class="gallery-item video-container">
+                    <video class="gallery-video" autoplay muted loop playsinline onclick="openFullscreen(this)">
+                        <source src="assets/story_video_2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- User Grid Images -->
+                <div class="gallery-item">
+                    <img src="assets/brow_work.png" alt="Eyebrow Threading Work" class="gallery-img">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/henna_brows_color_treatment.png" alt="Henna Brows and Color Treatment"
+                        class="gallery-img">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/happy_client.png" alt="Happy Client at Malati's Beauty Bar" class="gallery-img">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/nail_art.png" alt="Creative Nail Art" class="gallery-img">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/permenant_hair_staigthing.png" alt="Permanent Hair Straightening"
+                        class="gallery-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title" data-i18n="reviews_title">Kind Words</h2>
+
+            <div class="reviews-carousel-container">
+                <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+
+                <div class="reviews-slider">
+
+                    <!-- Group 1 -->
+                    <div class="review-group active">
+                        <div class="review-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="review-text">"I had excellent service from Malati - she did my eyebrows with
+                                precision
+                                and I went back for the hair spa and haircut. She puts lots of care and effort into her
+                                work."</p>
+                            <h4 class="review-author">- Samyuktha Mahadevan</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="review-text">"I had such an amazing waxing experience here! I felt super
+                                comfortable
+                                the whole time, and she was incredibly kind and professional."</p>
+                            <h4 class="review-author">- Nicole Yushenkova</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="review-text">"She is extremely professional. Highly recommend her beauty services!
+                                I
+                                got eye brows threading and facial done."</p>
+                            <h4 class="review-author">- Deepali Hooda</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <!-- Group 2 -->
+                    <div class="review-group">
+                        <div class="review-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="review-text">"Best facial I've ever had! My skin feels so fresh and glowing.
+                                Malati
+                                uses lovely organic products that smell amazing."</p>
+                            <h4 class="review-author">- Elena K.</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="review-text">"Malati is a magician with eyebrows. I was nervous to try a new
+                                place,
+                                but she shaped them perfectly. I won't go anywhere else now!"</p>
+                            <h4 class="review-author">- Sarah Davis</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="review-text">"Very relaxing atmosphere and professional service. The hot oil head
+                                massage was exactly what I needed after a long week."</p>
+                            <h4 class="review-author">- Anouk Jansen</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+
+                    <!-- Group 3 (New) -->
+                    <div class="review-group">
+                        <div class="review-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="review-text">"I absolutely love my henna brows! The color is perfect and natural.
+                                Malati really listens to what you want."</p>
+                            <h4 class="review-author">- Jessica M.</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                        <div class="review-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="review-text">"The most painless waxing experience I've ever had. Fast, efficient,
+                                and
+                                very hygienic. Highly recommended!"</p>
+                            <h4 class="review-author">- Sophie de Vries</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                        <div class="review-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="review-text">"Great haircuts at affordable prices. The salon is cute and very
+                                clean.
+                                I'll definitely be coming back."</p>
+                            <h4 class="review-author">- Laura B.</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+
+                    <!-- Group 4 (New) -->
+                    <div class="review-group">
+                        <div class="review-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="review-text">"Malati is so kind and warm. The herbal facial was incredibly
+                                relaxing
+                                and my skin looks great."</p>
+                            <h4 class="review-author">- Emma W.</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                        <div class="review-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="review-text">"Professional thread work. She shapes them exactly how I like, thick
+                                and
+                                defined. 10/10 service."</p>
+                            <h4 class="review-author">- Riya S.</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                        <div class="review-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="review-text">"Found this gem in Leiden recently. The hair spa treatment is a
+                                must-try
+                                for dry hair!"</p>
+                            <h4 class="review-author">- Chantal V.</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+
+                    <!-- Group 5 (New) -->
+                    <div class="review-group">
+                        <div class="review-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="review-text">"Always a pleasure visiting Malati. She is very skilled and takes her
+                                time to ensure everything is perfect."</p>
+                            <h4 class="review-author">- Michelle T.</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                        <div class="review-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="review-text">"Brazilian wax was quick and done with great care. Malati makes you
+                                feel
+                                very at ease."</p>
+                            <h4 class="review-author">- Lisa G.</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                        <div class="review-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="review-text">"Threading and tinting combo is the best deal. My morning routine is
+                                so
+                                much faster now!"</p>
+                            <h4 class="review-author">- Brittney H.</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <div class="dots-container">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact_title">Visit Us</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Paramaribostraat 41, 2315 VE Leiden, Netherlands</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p><a href="tel:+31630372817">06 30372817</a></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:malatibeautybar@gmail.com">malatibeautybar@gmail.com</a></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="far fa-clock"></i>
+                        <div>
+                            <p data-i18n="contact_hours">Mon - Sun: Open (See Google for specific hours)</p>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/31630372817" class="btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/malati_beauty_bar/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://maps.app.goo.gl/YourMapLink" target="_blank"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <a href="https://www.google.com/maps/place/Malati's+Beauty+Bar/@52.167741,4.5149521,17z/data=!3m1!4b1!4m6!3m5!1s0x47c5c70038b55ee1:0x722b4dd6ae90df55!8m2!3d52.167741!4d4.5149521!16s%2Fg%2F11y2_8y_8y?entry=ttu"
+                        target="_blank" class="map-link">
+                        <img src="assets/location_map.png" alt="Malati's Beauty Bar Location and Reviews"
+                            class="map-image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p data-i18n="footer_rights">&copy; 2024 Malati's Beauty Bar. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

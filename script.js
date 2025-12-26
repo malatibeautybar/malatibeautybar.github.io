@@ -185,7 +185,7 @@ const translations = {
         'about_intro_contact': 'Contact us via call or WhatsApp to book an appointment. ✨',
 
         'malati_name': 'Meet Malati',
-        'malati_role': 'Esthetician & Beauty Expert',
+        'malati_role': 'Beautician & Beauty Expert',
         'malati_bio_1': 'With years of experience in the beauty industry, Malati brings a gentle touch and expert precision to every treatment.',
         'malati_bio_2': 'Her philosophy is simple: beauty should be organic, relaxing, and tailored to you. Whether it\'s the art of brow threading or the science of herbal facials, Malati ensures you leave feeling refreshed and radiant.',
 

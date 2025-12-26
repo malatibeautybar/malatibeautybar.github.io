@@ -94,8 +94,12 @@
         }
 
         .logo-img {
-            height: 100px;
+            height: 120px;
+            /* Increased by 1.2x (was 100px) */
             margin-bottom: 15px;
+            border-radius: 50%;
+            /* Made round */
+            object-fit: cover;
         }
 
         h1 {
@@ -112,6 +116,16 @@
             font-weight: 300;
             letter-spacing: 2px;
             text-transform: uppercase;
+        }
+
+        .sub-tagline {
+            display: block;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-top: 15px;
+            letter-spacing: 0.5px;
         }
 
         /* Hero Image Area */
@@ -137,6 +151,8 @@
             display: flex;
             justify-content: center;
             align-items: flex-start;
+            padding-left: 40px;
+            /* Moved content a bit right */
         }
 
         .services-grid {
@@ -144,6 +160,8 @@
             grid-template-columns: 1fr 1fr;
             gap: 20px 40px;
             width: 100%;
+            max-width: 90%;
+            /* Restrict width slightly to center visually */
         }
 
         .service-item {
@@ -164,7 +182,8 @@
 
         /* Contact & CTA Section */
         .bottom-section {
-            background: var(--secondary-color);
+            background: #dcd3d0;
+            /* Darker/deeper version of light brownish */
             margin: 0 -40px -40px -40px;
             /* Bleed to edges */
             padding: 40px;
@@ -182,12 +201,16 @@
             display: flex;
             align-items: center;
             margin-bottom: 15px;
-            color: var(--text-dark);
+            color: #27140f;
+            /* Even darker brown for better contrast */
             font-size: 1.2rem;
+            font-weight: 600;
+            /* Added weight */
         }
 
         .contact-row i {
-            color: var(--primary-color);
+            color: #6D4C41;
+            /* Darker accent icon */
             width: 30px;
             font-size: 1.4rem;
             margin-right: 15px;
@@ -196,9 +219,11 @@
         .contact-row strong {
             display: block;
             font-size: 0.9rem;
-            color: var(--text-light);
+            color: #3E2723;
+            /* Darker label */
             text-transform: uppercase;
             letter-spacing: 1px;
+            font-weight: 700;
         }
 
         .qr-section {
@@ -273,6 +298,9 @@
                 box-shadow: none;
                 width: 100%;
                 height: 100%;
+                /* Force background colors */
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
             }
 
             @page {
@@ -289,7 +317,7 @@
         <h3>Poster Settings</h3>
         <p style="margin-bottom: 10px; font-size: 0.9rem; color: #666;">Enter your website URL below to update the QR
             code.</p>
-        <input type="text" id="websiteUrl" class="url-input" value="https://malatisbeautybar.com"
+        <input type="text" id="websiteUrl" class="url-input" value="https://malatibeautybar.nl/#services"
             placeholder="https://your-website.com">
         <button class="btn-print" onclick="window.print()">Save as PDF / Print</button>
     </div>
@@ -304,6 +332,7 @@
                 <img src="assets/logo.png" alt="Logo" class="logo-img">
                 <h1>Malati's Beauty Bar</h1>
                 <p class="tagline">Organic Beauty & Wellness</p>
+                <span class="sub-tagline">A cozy home-based salon for your exclusive beauty needs</span>
             </header>
 
             <div class="hero-area">
@@ -354,6 +383,13 @@
                         <div>
                             <strong>WhatsApp</strong>
                             Available for easy booking
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <strong>Website</strong>
+                            www.malatibeautybar.nl
                         </div>
                     </div>
                 </div>

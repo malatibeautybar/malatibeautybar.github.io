@@ -84,7 +84,7 @@ p.instructions {
 
 /* Common Elements */
 .logo-img {
-    height: 40px;
+    height: 52px;
     margin-bottom: 10px;
     border-radius: 50%;
     /* Make logo round */
@@ -119,7 +119,7 @@ p.instructions {
 }
 
 .card-front .logo-img {
-    height: 50px;
+    height: 65px;
     filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.3));
     border-radius: 50%;
     /* Ensure roundness here too */

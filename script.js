@@ -187,7 +187,7 @@ const translations = {
         'malati_name': 'Meet Malati',
         'malati_role': 'Beautician & Founder',
         'malati_bio_1': 'Malati Patel is a distinguished beauty professional with over 6 years of international experience, honing her craft in India, the trend-setting salons of California (USA), and now the Netherlands.',
-        'malati_bio_2': 'As the founder of Malati\'s Beauty Bar, she combines this global expertise with a personal touch. Her signature technique blends the precision of traditional Indian threading with modern Western aesthetic standards. Malati is dedicated to creating a sanctuary where every client feels heard, cared for, and leaves looking their absolute best.',
+        'malati_bio_2': 'As the founder of Malati\'s Beauty Bar, she combines this global expertise with a personal touch. Her signature technique blends the precision of traditional Indian threading with modern Western aesthetic standards. Malati is dedicated to creating a sanctuary where every client feels heard, cared for, and leaves looking their absolute best.<br><br><em>\"Real beauty isn\'t about perfection—it\'s about the confidence that glows when you nurture your true self.\"</em>',
 
         'services_title': 'Our Services',
         'service_cat_brows': 'Brow & Face Artistry',
@@ -266,7 +266,7 @@ function setLanguage(lang) {
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (translations[lang][key]) {
-            element.innerText = translations[lang][key];
+            element.innerHTML = translations[lang][key]; // Changed to innerHTML to support formatting
         }
     });
 

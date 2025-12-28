@@ -187,7 +187,7 @@ const translations = {
         'malati_name': 'Meet Malati',
         'malati_role': 'Beautician & Founder',
         'malati_bio_1': 'Malati Patel is a distinguished beauty professional with over 6 years of international experience, honing her craft in India, the trend-setting salons of California (USA), and now the Netherlands.',
-        'malati_bio_2': 'As the founder of Malati\'s Beauty Bar, she combines this global expertise with a personal touch. Her signature technique blends the precision of traditional Indian threading with modern Western aesthetic standards. Malati is dedicated to creating a sanctuary where every client feels heard, cared for, and leaves looking their absolute best.<br><br><em>\"Real beauty isn\'t about perfection—it\'s about the confidence that glows when you nurture your true self.\"</em>',
+        'malati_bio_2': "Her philosophy is simple: beauty is about enhancing what you already have. By blending traditional Indian threading techniques with modern Western standards of hygiene and aesthetics, she provides a personalized experience for every client.<br><br><em>\"Empowering your true confidence through artful beauty.\"</em>",
 
         'services_title': 'Our Services',
         'service_cat_brows': 'Brow & Face Artistry',
@@ -238,7 +238,7 @@ const translations = {
         'malati_name': 'Meet Malati',
         'malati_role': 'Beautician & Founder',
         'malati_bio_1': 'Malati Patel is a distinguished beauty professional with over 6 years of international experience, honing her craft in India, the trend-setting salons of California (USA), and now the Netherlands.',
-        'malati_bio_2': 'As the founder of Malati\'s Beauty Bar, she combines this global expertise with a personal touch. Her signature technique blends the precision of traditional Indian threading with modern Western aesthetic standards. Malati is dedicated to creating a sanctuary where every client feels heard, cared for, and leaves looking their absolute best.',
+        'malati_bio_2': "Haar filosofie is simpel: schoonheid draait om het versterken van wat je al hebt. Door traditionele Indiase threading-technieken te combineren met moderne westerse standaarden van hygiëne en esthetiek, biedt ze een gepersonaliseerde ervaring voor elke klant.<br><br><em>\"Versterk je ware zelfvertrouwen door kunstzinnige schoonheid.\"</em>",
 
         'services_title': 'Onze Diensten',
         'service_cat_brows': 'Wenkbrauw & Gezicht Styling',

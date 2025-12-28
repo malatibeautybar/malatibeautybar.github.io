@@ -249,7 +249,8 @@ ul {
 /* About Intro Formatting */
 .about-intro p {
     margin-bottom: 20px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    /* Increased from 1.1rem to fill space */
     color: #555;
     text-align: justify;
     /* Better alignment for blocks of text */

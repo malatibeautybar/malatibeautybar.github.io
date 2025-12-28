@@ -251,10 +251,23 @@ ul {
     margin-bottom: 20px;
     font-size: 1.1rem;
     color: #555;
-    text-align: center;
+    text-align: justify;
+    /* Better alignment for blocks of text */
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Center the strong/titles if needed, but keeping main text justified looks cleaner */
+.about-intro p strong {
+    display: block;
+    /* Make strong tags block to title the paragraph */
+    text-align: center;
+    /* Titles centered */
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
 }
 
 /* Meet Malati Section */

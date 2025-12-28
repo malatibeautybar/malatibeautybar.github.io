@@ -186,8 +186,8 @@ const translations = {
 
         'malati_name': 'Meet Malati',
         'malati_role': 'Beautician & Beauty Expert',
-        'malati_bio_1': 'With years of experience in the beauty industry, Malati brings a gentle touch and expert precision to every treatment.',
-        'malati_bio_2': 'Her philosophy is simple: beauty should be organic, relaxing, and tailored to you. Whether it\'s the art of brow threading or the science of herbal facials, Malati ensures you leave feeling refreshed and radiant.',
+        'malati_bio_1': 'Malati Patel is a distinguished beauty professional with over 6 years of international experience, spanning India, California (USA), and the Netherlands. She has mastered the perfect blend of traditional Indian techniques and modern Western cosmetology.',
+        'malati_bio_2': 'Her philosophy is rooted in personalized care—creating a warm, welcoming sanctuary where expert precision meets relaxation. Whether it\'s the art of brow threading or the science of herbal facials, Malati ensures every visit is a rejuvenating experience.',
 
         'services_title': 'Our Services',
         'service_cat_brows': 'Brow & Face Artistry',

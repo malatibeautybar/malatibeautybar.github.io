@@ -165,7 +165,7 @@ const translations = {
         'nav_reviews': 'Reviews',
         'nav_book': 'Book Now',
 
-        'hero_title_1': 'Organic Elegance & Beauty',
+        'hero_title_1': 'Waxing | Threading | Facial | Hair | Massage',
         'hero_desc_1': 'Experience the art of herbal treatments in a cozy, professional setting.',
         'btn_appointment': 'Book Appointment',
 
@@ -216,7 +216,7 @@ const translations = {
         'nav_reviews': 'Recensies',
         'nav_book': 'Boek Nu',
 
-        'hero_title_1': 'Organische Elegantie & Schoonheid',
+        'hero_title_1': 'Waxen | Threading | Gezichtsbehandeling | Haar | Massage',
         'hero_desc_1': 'Ervaar de kunst van kruidenbehandelingen in een gezellige, professionele setting.',
         'btn_appointment': 'Afspraak Maken',
 

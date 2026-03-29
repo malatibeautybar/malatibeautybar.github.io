@@ -225,9 +225,9 @@ const translations = {
         'facial_acne': 'Acne Facial',
         'facial_brightening': 'Brightening Facial',
         'facial_antiaging': 'Anti-aging Facial',
-        'facial_note_1': '*Common facial steps: Cleanse -> Exfoliate -> Steam -> Extract -> Massage -> Mask -> Moisturize',
-        'facial_note_2': 'Add on based on the facial type',
-        'facial_note_3': 'every extra 5 minutes costs €5',
+        'facial_note_1': '* Common facial steps: Cleanse -> Exfoliate -> Steam -> Extract -> Massage -> Mask -> Moisturize',
+        'facial_note_2': '* Add-ons based on the facial type',
+        'facial_note_3': '* Every extra 5 minutes costs €5',
 
         'service_cat_massage': 'Pedicure & Massages',
         'massage_pedi': 'Pedicure',
@@ -235,7 +235,7 @@ const translations = {
         'massage_face': 'Face Massage with Pressure Points & Tissue Massage (25 min)',
         'massage_back': 'Back, Neck & Shoulder Massage (25 min)',
         'massage_body': 'Relaxing Full Body Massage (60 min)',
-        'massage_note': 'every extra 5 minutes costs €5',
+        'massage_note': '* Every extra 5 minutes costs €5',
         'price_note': '* Prices are subject to change. Please confirm when booking.',
 
         'gallery_title': 'Portfolio',
@@ -291,9 +291,9 @@ const translations = {
         'facial_acne': 'Acne Gezichtsbehandeling',
         'facial_brightening': 'Ophelderende Gezichtsbehandeling',
         'facial_antiaging': 'Anti-aging Gezichtsbehandeling',
-        'facial_note_1': '*Gezichtsbehandeling stappen: Reinigen -> Scrubben -> Stomen -> Extractie -> Massage -> Masker -> Hydrateren',
-        'facial_note_2': 'Add on op basis van het type gezichtsbehandeling',
-        'facial_note_3': 'elke extra 5 minuten kost €5',
+        'facial_note_1': '* Gemeenschappelijke stappen: Reinigen -> Scrubben -> Stomen -> Extractie -> Massage -> Masker -> Hydrateren',
+        'facial_note_2': '* Add-ons op basis van het type gezichtsbehandeling',
+        'facial_note_3': '* Elke extra 5 minuten kost €5',
 
         'service_cat_massage': 'Pedicure & Massages',
         'massage_pedi': 'Pedicure',
@@ -301,7 +301,7 @@ const translations = {
         'massage_face': 'Gezichtsmassage met Drukpunten & Weefselmassage (25 min)',
         'massage_back': 'Rug, Nek & Schouder Massage (25 min)',
         'massage_body': 'Ontspannende Volledige Lichaamsmassage (60 min)',
-        'massage_note': 'elke extra 5 minuten kost €5',
+        'massage_note': '* Elke extra 5 minuten kost €5',
         'price_note': '* Prijzen zijn onder voorbehoud. Gelieve te bevestigen bij het boeken.',
 
         'gallery_title': 'Portfolio',

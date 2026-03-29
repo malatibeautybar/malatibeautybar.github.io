@@ -10,16 +10,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Hero Slider
     const slides = document.querySelectorAll('.slide');
+    const heroDots = document.querySelectorAll('.hero-dot');
     let currentSlide = 0;
+    let heroInterval;
+
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        if(heroDots.length > 0) {
+            heroDots.forEach(dot => dot.classList.remove('active'));
+            heroDots[index].classList.add('active');
+        }
+        slides[index].classList.add('active');
+        currentSlide = index;
+    }
 
     function nextSlide() {
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].classList.add('active');
+        let newIndex = (currentSlide + 1) % slides.length;
+        showSlide(newIndex);
     }
 
     if (slides.length > 0) {
-        setInterval(nextSlide, 5000); // Change slide every 5 seconds
+        heroInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    }
+
+    if (heroDots.length > 0) {
+        heroDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showSlide(index);
+                clearInterval(heroInterval);
+                heroInterval = setInterval(nextSlide, 5000);
+            });
+        });
     }
 
     // Accordion Functionality
@@ -166,15 +187,15 @@ const translations = {
         'nav_book': 'Book Now',
 
         'hero_title_1': 'Waxing | Threading | Facial | Hair | Massage',
-        'hero_desc_1': 'Experience the art of herbal treatments in a cozy, professional setting.',
+        'hero_desc_1': 'Experience the art of premium treatments in a cozy, professional setting.',
         'btn_appointment': 'Book Appointment',
 
         'hero_title_2': 'Precision Brow Artistry',
-        'hero_desc_2': 'Perfectly shaped brows using organic threading techniques.',
+        'hero_desc_2': 'Perfectly shaped brows using expert threading techniques.',
         'btn_services': 'View Services',
 
         'hero_title_3': 'Rejuvenating Facials',
-        'hero_desc_3': 'Restore your glow with our signature herbal spa treatments.',
+        'hero_desc_3': 'Restore your glow with our signature rejuvenating spa treatments.',
 
         'about_title': "Welcome to Malati's Beauty Bar",
         'about_intro_strong': 'A Cozy Home-Based Salon',
@@ -217,15 +238,15 @@ const translations = {
         'nav_book': 'Boek Nu',
 
         'hero_title_1': 'Waxen | Threading | Gezichtsbehandeling | Haar | Massage',
-        'hero_desc_1': 'Ervaar de kunst van kruidenbehandelingen in een gezellige, professionele setting.',
+        'hero_desc_1': 'Ervaar de kunst van premium behandelingen in een gezellige, professionele setting.',
         'btn_appointment': 'Afspraak Maken',
 
         'hero_title_2': 'Precisie Wenkbrauw Styling',
-        'hero_desc_2': 'Perfect gevormde wenkbrauwen met organische threading-technieken.',
+        'hero_desc_2': 'Perfect gevormde wenkbrauwen met vakkundige threading-technieken.',
         'btn_services': 'Bekijk Diensten',
 
         'hero_title_3': 'Verjongende Gezichtsbehandelingen',
-        'hero_desc_3': 'Herstel je gloed met onze signature kruiden spa-behandelingen.',
+        'hero_desc_3': 'Herstel je gloed met onze signature verjongende spa-behandelingen.',
 
         'about_title': "Welcome to Malati's Beauty Bar",
         'about_intro_strong': 'A Cozy Home-Based Salon',

@@ -199,7 +199,7 @@ const translations = {
 
         'about_title': "Welcome to Malati's Beauty Bar",
         'about_intro_strong': 'A Cozy Home-Based Salon',
-        'about_intro_1': 'Where Comfort Meets Elegance. Located in the Heart of Leiden.',
+        'about_intro_1': 'Where Comfort Meets Elegance. Located in the Heart of Rijnsburg.',
         'about_intro_2': 'Relax and experience professional, salon-quality beauty care in a warm and welcoming home environment. We offer expert threading, waxing, facials, hair care, and relaxing massages, all performed with great care and attention to detail. Our treatments use herbal and organic products to help you achieve naturally radiant skin and healthy, beautiful hair.',
         'about_intro_3': 'Open for off-hours and weekends, Malati’s Beauty Bar is designed to give you a comfortable, personal, and relaxing salon experience.',
         'about_intro_4_strong': 'Indulge in beauty care that feels relaxing, refined, and just for you.',
@@ -265,7 +265,7 @@ const translations = {
 
         'about_title': "Welcome to Malati's Beauty Bar",
         'about_intro_strong': 'A Cozy Home-Based Salon',
-        'about_intro_1': 'Where Comfort Meets Elegance. Located in the Heart of Leiden.',
+        'about_intro_1': 'Where Comfort Meets Elegance. Located in the Heart of Rijnsburg.',
         'about_intro_2': 'Relax and experience professional, salon-quality beauty care in a warm and welcoming home environment. We offer expert threading, waxing, facials, hair care, and relaxing massages, all performed with great care and attention to detail. Our treatments use herbal and organic products to help you achieve naturally radiant skin and healthy, beautiful hair.',
         'about_intro_3': 'Open for off-hours and weekends, Malati’s Beauty Bar is designed to give you a comfortable, personal, and relaxing salon experience.',
         'about_intro_4_strong': 'Indulge in beauty care that feels relaxing, refined, and just for you.',
